@@ -1,3 +1,6 @@
+const button = document.getElementById("submit");
+const text = document.getElementById("hexCode");
+
 function changeColor() {
     var mytext = document.querySelector('#headerText');
     var randomColor = getRandomColor();
@@ -21,3 +24,9 @@ function getRandomColor() {
   }
 
   setInterval(changeColor, 2000);
+
+  button.addEventListener('click', function(){
+      const color = getRandomColor();
+    document.body.style.backgroundColor = color;
+    text.innerText = `The hex code of the color is ${color}`;
+  });
