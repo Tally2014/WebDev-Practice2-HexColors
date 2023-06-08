@@ -1,25 +1,38 @@
-.container {
+
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .first-div h2{
+    color: green;
+  }
+  
+  .container {
     display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
     height: 100vh;
   }
 
-.mainBtn{
-    width: 10rem;
-  height: 50px;
-  margin: 5px;
-  font-size: 16px;
-  background-color: #0086ff;
-  color: aliceblue;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: .5s ease;
-}
-
-.mainBtn:hover{
-    box-shadow: none;
-    color:#39a1fe;
-    transform: scale(1.05);
-}
+  .first-div, .second-div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .first-div {
+    padding-top: 5%;
+    
+  }
+  
+  .second-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+  }
